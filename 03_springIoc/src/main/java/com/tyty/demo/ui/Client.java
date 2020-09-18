@@ -20,9 +20,9 @@ public class Client {
      *      FileSystemXmlApplicationContext: 它可以加载磁盘任意路径下的配置文件(必须有访问权限)
      *      AnnotationConfigApplication: 它是用于读取注解创建容器的
      *  核心容器的两个接口引发的问题
-     *   ApplicationContext:
+     *   ApplicationContext: 适用于单例对象
      *      构建核心容器时,创建对象采用的策略是采用立即加载的方式.也就是说,只要一读取完配置文件马上就创建配置文件中的对象
-     *   BeanFactory:
+     *   BeanFactory: 适用于多例对象
      *      他在构建核心容器时,创建对象采取的时延迟加载的方式.也就是说,什么时候根据id获取对象了,什么时候才是真正的创建对象
      *  @param args
      */
