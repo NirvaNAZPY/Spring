@@ -7,14 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01_jdbc" />
+        <module name="04_springBean" />
         <module name="03_springIoc" />
         <module name="02_factory" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="01_jdbc" target="14" />
-      <module name="02_factory" target="14" />
+      <module name="01_jdbc" target="1.5" />
+      <module name="02_factory" target="1.5" />
       <module name="03_springIoc" target="14" />
+      <module name="04_springBean" target="14" />
     </bytecodeTargetLevel>
   </component>
 </project>

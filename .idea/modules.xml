@@ -5,6 +5,7 @@
       <module fileurl="file://$PROJECT_DIR$/01_jdbc/01_jdbc.iml" filepath="$PROJECT_DIR$/01_jdbc/01_jdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/02_factory/02_factory.iml" filepath="$PROJECT_DIR$/02_factory/02_factory.iml" />
       <module fileurl="file://$PROJECT_DIR$/03_springIoc/03_springIoc.iml" filepath="$PROJECT_DIR$/03_springIoc/03_springIoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/04_springBean/04_springBean.iml" filepath="$PROJECT_DIR$/04_springBean/04_springBean.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>
