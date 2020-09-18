@@ -84,6 +84,11 @@ public class BeanFuctory {
 //        return bean;
 //    }
 
+    /**
+     * 根据bean的名称,获取bean对象(单例版)
+     * @param beanName
+     * @return
+     */
     public static Object getBean(String beanName) {
         return beans.get(beanName);
     }
