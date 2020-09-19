@@ -51,3 +51,4 @@
     <!--  <bean id="accountService" class="com.tyty.demo.service.Impl.AccountServiceImpl" init-method="init" destroy-method="destory"></bean>  -->
     <bean id="accountService" class="com.tyty.demo.service.Impl.AccountServiceImpl" init-method="init" destroy-method="destory" scope="prototype"></bean>
 </beans>
+
