@@ -14,9 +14,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Client {
     public static void main(String[] args) {
         // 1.获取核心容器对象
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        // ApplicationContext接口中无close方法
+        // ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         // 2.根据id获取Bean对象
         AccountService as1 = ac.getBean("accountService",AccountService.class);
-        AccountService as2 = ac.getBean("accountService",AccountService.class);
+        // AccountService as2 = ac.getBean("accountService",AccountService.class);
+
+        // 手动关闭容器
+        ac.close();
     }
 }
