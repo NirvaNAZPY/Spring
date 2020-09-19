@@ -32,7 +32,7 @@
                     prototype：多例
                     request：作用于web应用的请求范围
                     session：作用与web应用的会话范围
-                    global-session：作用于集群环境的会话范围（全局会话范围），当不是集群环境时，他就是session
+                    global-session：作用于集群环境的会话范围（全局会话范围），当不是集群环境时，他就是session（5.0貌似被移除）
     -->
     <bean id="accountService" class="com.tyty.demo.service.Impl.AccountServiceImpl" scope="prototype"></bean>
 </beans>
