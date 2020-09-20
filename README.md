@@ -1,5 +1,5 @@
-# Spring
-Spring学习记录
+# Spring学习记录
+目录
 1. 01_jdbc  
     通过jdbc的案例,解释什么是耦合
 2. 02_factory  
