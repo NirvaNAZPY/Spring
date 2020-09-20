@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="01_jdbc" />
+        <module name="05_springDI" />
         <module name="04_springBean" />
         <module name="03_springIoc" />
         <module name="02_factory" />
+        <module name="01_jdbc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="02_factory" target="14" />
       <module name="03_springIoc" target="14" />
       <module name="04_springBean" target="14" />
+      <module name="05_springDI" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
