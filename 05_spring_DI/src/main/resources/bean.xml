@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+        依赖注入（Dependency Injection）
+            Ioc的作用：
+                降低程序的耦合（依赖关系）
+            依赖关系的管理：
+                以后都交给spring维护
+                在当前类需要用到其他类的对象，由spring为我们提供，我们只需要在配置文件中说明
+            依赖关系的维护：
+                称之为依赖注入
+            依赖注入：
+                能注入的数据，有三类
+                    1.基本类型和String
+                    2.其他bean类型（在配置文件中或注解配置过的bean）
+                    3.复杂类型/集合类型
+                注入的方式，有三种：
+                    1.使用构造函数提供
+                    2.使用set方法提供
+                    3.使用注解提供
+    -->
+    <!--
+        构造函数的注入：
+            使用的标签：constructor-arg
+            标签出现的位置：bean标签的内部
+            标签中的属性：
+                1.type:用于指定要注入的数据类型，该数据类型也是构造函数中某个或某些个参数的类型
+                2.index:用于指定要注入的数据给构造函数中指定索引位置的参数赋值，索引位置从0开始
+                3.name：用于指定给构造函数中指定名称的参数赋值
+                ===================================================================
+                4.value:用于提供基本类型和String类型的数据
+                5.ref：用于指定其他的bean类型数据，它指定的就是在spring的Ioc核心容器中出现过的bean对象
+            优势：
+                在获取bean对象时，注入数据必须的操作，否则对象无法创建成功
+            弊端：
+                改变了bean对象的实例化方式，使我们在创建对象时，如果用不到这些数据
+    -->
+        <bean id="AccountServiceImpl" class="com.tyty.demo.service.Impl.AccountServiceImpl">
+            <constructor-arg name="name" value="test"></constructor-arg>
+            <constructor-arg name="age" value="18"></constructor-arg>
+            <constructor-arg name="birthday" ref="now"></constructor-arg>
+        </bean>
+
+        <bean id="now" class="java.util.Date"></bean>
+
+    <!--
+        set方法注入（更常用的方式）：
+            涉及的标签：property
+            出现的位置：bean标签的内部
+            标签的属性
+                name：用于指定注入时所调用的set方法名称
+                value：用于提供基本类型和String类型的数据
+                ref：用于指定其他的bean类型数据。它指的就是在spring的Ioc核心容器中出现过的bean对象
+            优势：
+                创建对象时没有明确的限制，可以直接使用默认构造函数
+            弊端：
+                如果有某个成员必须有值，则获取对象时有可能set方法没有执行
+    -->
+        <bean id="AccountServiceImpl2" class="com.tyty.demo.service.Impl.AccountServiceImpl2">
+            <property name="name" value="test"></property>
+            <property name="age" value="1"></property>
+            <property name="birthday" ref="now"></property>
+        </bean>
+
+        <!--
+            复杂类型的注入：结构类似，标签可以互换
+        -->
+        <bean id="AccountServiceImpl3" class="com.tyty.demo.service.Impl.AccountServiceImpl3">
+            <property name="myStrs">
+                <array>
+                    <value>
+                        AAA
+                    </value>
+                    <value>
+                        BBB
+                    </value>
+                    <value>
+                        CCC
+                    </value>
+                </array>
+            </property>
+            <property name="mySet">
+                <list>
+                    <value>
+                        AAA
+                    </value>
+                    <value>
+                        BBB
+                    </value>
+                    <value>
+                        CCC
+                    </value>
+                </list>
+            </property>
+            <property name="myList">
+                <set>
+                    <value>
+                        AAA
+                    </value>
+                    <value>
+                        BBB
+                    </value>
+                    <value>
+                        CCC
+                    </value>
+                </set>
+            </property>
+            <property name="myMap">
+                <map>
+                    <entry key="a" value="b"></entry>
+                    <entry key="b">
+                        <value>bbb</value>
+                    </entry>
+                </map>
+            </property>
+            <property name="myProps">
+                <props>
+                    <prop key="testA">aaa</prop>
+                </props>
+            </property>
+        </bean>
+</beans>
+
+
+
+

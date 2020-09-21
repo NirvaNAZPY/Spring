@@ -3,7 +3,7 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--把对象的创建交给spring管理-->
-    <bean id="accountService" class="com.tyty.demo.service.Impl.AccountServiceImpl"></bean>
+    <bean id="accountService" class="com.tyty.AccountServiceImpl"></bean>
 
     <bean id="accountDao" class="com.tyty.demo.dao.Impl.AccountDaoImpl"></bean>
 </beans>
