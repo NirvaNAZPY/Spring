@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/04_springBean/04_springBean.iml" filepath="$PROJECT_DIR$/04_springBean/04_springBean.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_springDI/05_springDI.iml" filepath="$PROJECT_DIR$/05_springDI/05_springDI.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_spring_DI/05_spring_DI.iml" filepath="$PROJECT_DIR$/05_spring_DI/05_spring_DI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/06_anno_Ioc/06_anno_Ioc.iml" filepath="$PROJECT_DIR$/06_anno_Ioc/06_anno_Ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>
