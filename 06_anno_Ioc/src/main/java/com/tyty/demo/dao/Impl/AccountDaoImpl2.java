@@ -1,6 +1,7 @@
 package com.tyty.demo.dao.Impl;
 
 import com.tyty.demo.dao.AccountDao;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Repository;
 
 /**

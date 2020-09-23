@@ -29,10 +29,13 @@ public class Client {
      */
     public static void main(String[] args) {
         // 1.获取核心容器对象
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         // 2.根据id获取Bean对象
-        AccountService as = ac.getBean("accountServiceImpl",AccountService.class);
+        AccountService as1 = ac.getBean("accountServiceImpl",AccountService.class);
+        AccountService as2 = ac.getBean("accountServiceImpl",AccountService.class);
+        as1.saveAccount();
 
-        as.saveAccount();
+        System.out.println(as1==as2);
+        ac.close();
     }
 }
