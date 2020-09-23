@@ -37,7 +37,7 @@
             弊端：
                 改变了bean对象的实例化方式，使我们在创建对象时，如果用不到这些数据
     -->
-        <bean id="AccountServiceImpl" class="com.tyty.demo.service.Impl.AccountServiceImpl">
+        <bean id="AccountServiceImpl" class="com.tyty.AccountServiceImpl">
             <constructor-arg name="name" value="test"></constructor-arg>
             <constructor-arg name="age" value="18"></constructor-arg>
             <constructor-arg name="birthday" ref="now"></constructor-arg>

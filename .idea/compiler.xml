@@ -22,7 +22,7 @@
       <module name="04_springBean" target="14" />
       <module name="05_spring_DI" target="14" />
       <module name="05_springDI" target="1.5" />
-      <module name="06_anno_Ioc" target="1.5" />
+      <module name="06_anno_Ioc" target="14" />
       <module name="06_anno_ioc" target="1.5" />
     </bytecodeTargetLevel>
   </component>

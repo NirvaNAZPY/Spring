@@ -7,6 +7,7 @@ package com.tyty.demo.ui;
 import com.tyty.demo.dao.AccountDao;
 import com.tyty.demo.service.AccountService;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -30,10 +31,8 @@ public class Client {
         // 1.获取核心容器对象
         ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
         // 2.根据id获取Bean对象
-        AccountService as = ac.getBean("accountService",AccountService.class);
-        AccountDao adao = ac.getBean("accountDao",AccountDao.class);
+        AccountService as = ac.getBean("accountServiceImpl",AccountService.class);
 
-        System.out.println(as);
-        System.out.println(adao);
+        as.saveAccount();
     }
 }

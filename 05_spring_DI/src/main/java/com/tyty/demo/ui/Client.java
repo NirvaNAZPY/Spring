@@ -5,7 +5,6 @@ package com.tyty.demo.ui;
  */
 
 import com.tyty.demo.service.AccountService;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
