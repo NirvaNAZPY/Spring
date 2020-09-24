@@ -9,6 +9,7 @@
       <module fileurl="file://$PROJECT_DIR$/05_springDI/05_springDI.iml" filepath="$PROJECT_DIR$/05_springDI/05_springDI.iml" />
       <module fileurl="file://$PROJECT_DIR$/05_spring_DI/05_spring_DI.iml" filepath="$PROJECT_DIR$/05_spring_DI/05_spring_DI.iml" />
       <module fileurl="file://$PROJECT_DIR$/06_anno_Ioc/06_anno_Ioc.iml" filepath="$PROJECT_DIR$/06_anno_Ioc/06_anno_Ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/07_account_xml_ioc/07_account_xml_ioc.iml" filepath="$PROJECT_DIR$/07_account_xml_ioc/07_account_xml_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>
