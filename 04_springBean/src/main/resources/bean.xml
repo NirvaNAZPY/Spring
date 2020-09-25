@@ -49,7 +49,7 @@
                     死亡：当对象长时间不用且没有别的对象引用时，由java的垃圾回收器回收
     -->
     <!--  <bean id="accountService" class="com.tyty.AccountServiceImpl" init-method="init" destroy-method="destory"></bean>  -->
-    <bean id="accountService" class="com.tyty.AccountServiceImpl" init-method="init" destroy-method="destory" scope="prototype"></bean>
+    <bean id="accountService" class="com.tyty.demo.service.Impl.AccountServiceImpl" init-method="init" destroy-method="destory" scope="prototype"></bean>
 </beans>
 
 
