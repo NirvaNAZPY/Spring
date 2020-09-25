@@ -2,11 +2,11 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="accountService" class="com.tyty.AccountServiceImpl">
+    <bean id="accountService" class="com.tyty.demo.service.Impl.AccountServiceImpl">
         <property name="accountDao" ref="accoundDao"></property>
     </bean>
 
-    <bean id="accoundDao" class="com.tyty.AccountDaoImpl">
+    <bean id="accoundDao" class="com.tyty.demo.dao.Impl.AccountDaoImpl">
         <property name="runner" ref="runner"></property>
     </bean>
 
