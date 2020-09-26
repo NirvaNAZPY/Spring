@@ -14,6 +14,7 @@
         <option value="$PROJECT_DIR$/05_spring_DI/pom.xml" />
         <option value="$PROJECT_DIR$/06_anno_Ioc/pom.xml" />
         <option value="$PROJECT_DIR$/07_account_xml_ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/08_account_anno_Ioc/pom.xml" />
       </list>
     </option>
   </component>

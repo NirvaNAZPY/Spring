@@ -22,7 +22,7 @@ public class Application {
          * 5.遍历结果集
          * 6.释放资源
          */
-//        DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
+        // DriverManager.registerDriver(new com.mysql.cj.jdbc.Driver());
         Class.forName("com.mysql.cj.jdbc.Driver");
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/springdemo?serverTimezone=UTC","root","zpy@mysql");
         PreparedStatement pstm = conn.prepareStatement("select * from account");
