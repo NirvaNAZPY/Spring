@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/06_anno_Ioc/06_anno_Ioc.iml" filepath="$PROJECT_DIR$/06_anno_Ioc/06_anno_Ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/07_account_xml_ioc/07_account_xml_ioc.iml" filepath="$PROJECT_DIR$/07_account_xml_ioc/07_account_xml_ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/08_account_anno_Ioc/08_account_anno_Ioc.iml" filepath="$PROJECT_DIR$/08_account_anno_Ioc/08_account_anno_Ioc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/09_account_annioc_withoutxml/09_account_annioc_withoutxml.iml" filepath="$PROJECT_DIR$/09_account_annioc_withoutxml/09_account_annioc_withoutxml.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/Spring.iml" filepath="$PROJECT_DIR$/.idea/Spring.iml" />
     </modules>
   </component>
