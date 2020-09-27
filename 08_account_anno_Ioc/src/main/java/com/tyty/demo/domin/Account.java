@@ -48,6 +48,5 @@ public class Account implements Serializable {
                 + ",\"money\":"
                 + money
                 + "}}";
-
     }
 }

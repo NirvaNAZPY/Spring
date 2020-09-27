@@ -5,6 +5,8 @@ import com.tyty.demo.domin.Account;
 import org.apache.commons.dbutils.QueryRunner;
 import org.apache.commons.dbutils.handlers.BeanHandler;
 import org.apache.commons.dbutils.handlers.BeanListHandler;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
@@ -12,13 +14,11 @@ import java.util.List;
  * Created by TYTY on 2020/9/24 21:54
  */
 
+@Repository("accountDao")
 public class AccountDaoImpl implements AccountDao {
 
+    @Autowired
     private QueryRunner runner;
-
-    public void setRunner(QueryRunner runner){
-        this.runner = runner;
-    }
 
     @Override
     public List<Account> findAllAccount() {

@@ -3,6 +3,8 @@ package com.tyty.demo.service.Impl;
 import com.tyty.demo.dao.AccountDao;
 import com.tyty.demo.domin.Account;
 import com.tyty.demo.service.AccountService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -10,13 +12,11 @@ import java.util.List;
  * Created by TYTY on 2020/9/24 21:42
  */
 
+@Service("accountService")
 public class AccountServiceImpl implements AccountService {
 
+    @Autowired
     private AccountDao accountDao;
-
-    public void setAccountDao(AccountDao accountDao){
-        this.accountDao = accountDao;
-    }
 
     @Override
     public List<Account> findAllAccount() {
