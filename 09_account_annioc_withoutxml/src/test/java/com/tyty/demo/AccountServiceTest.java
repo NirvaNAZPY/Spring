@@ -4,10 +4,12 @@ package com.tyty.demo;
  * Created by TYTY on 2020/9/25 21:56
  */
 
+import com.tyty.demo.config.SpringConfiguration;
 import com.tyty.demo.domin.Account;
 import com.tyty.demo.service.AccountService;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.List;
@@ -19,7 +21,8 @@ public class AccountServiceTest {
     @Test
     public void testFindAll() {
         // 1.获取容器
-        ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        // ApplicationContext ac = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
         // 2.得到业务层对象
         AccountService as = ac.getBean("accountService",AccountService.class);
         // 3.执行方法
