@@ -7,6 +7,7 @@ package com.tyty.demo;
 import com.tyty.demo.config.SpringConfiguration;
 import com.tyty.demo.domin.Account;
 import com.tyty.demo.service.AccountService;
+import org.apache.commons.dbutils.QueryRunner;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -31,6 +32,15 @@ public class AccountServiceTest {
             System.out.println(account);
         }
     }
+
+    @Test
+    public void testQueryRunner(){
+        ApplicationContext ac = new AnnotationConfigApplicationContext(SpringConfiguration.class);
+        QueryRunner run1 = ac.getBean("runner", QueryRunner.class);
+        QueryRunner run2 = ac.getBean("runner", QueryRunner.class);
+        System.out.println(run1 == run2);
+    }
+
     @Test
     public void testFindOne() {
 

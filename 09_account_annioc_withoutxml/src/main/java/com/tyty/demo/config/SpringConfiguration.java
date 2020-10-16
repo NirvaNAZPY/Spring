@@ -7,10 +7,7 @@ package com.tyty.demo.config;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.dbutils.QueryRunner;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.ComponentScans;
-import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.*;
 
 import javax.sql.DataSource;
 
@@ -41,6 +38,7 @@ public class SpringConfiguration {
      * @return
      */
     @Bean(name="runner")
+    @Scope("prototype")
     public QueryRunner createQueryRunner(DataSource dataSource){
         return new QueryRunner(dataSource);
     }
