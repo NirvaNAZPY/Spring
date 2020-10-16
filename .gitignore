@@ -1,2 +1,17 @@
 # Project exclude paths
-/02_factory/target/
+01_jdbc/src/main/resources/
+01_jdbc/src/test/
+01_jdbc/target/
+02_factory/src/test/
+03_springIoc/src/test/
+03_springIoc/target/generated-sources/
+04_springBean/src/test/
+04_springBean/target/generated-sources/
+05_spring_DI/src/test/
+05_spring_DI/target/generated-sources/
+06_anno_Ioc/src/test/
+06_anno_Ioc/target/generated-sources/
+07_account_xml_ioc/target/generated-sources/
+07_account_xml_ioc/target/generated-test-sources/
+08_account_anno_Ioc/target/generated-sources/
+08_account_anno_Ioc/target/generated-test-sources/
