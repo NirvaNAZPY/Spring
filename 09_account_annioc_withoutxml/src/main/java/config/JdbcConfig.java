@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 /**
  * Spring连接数据库相关配置类
  */
-@Configuration
+//@Configuration 使用@ComponentScan("")扫描包时需要
 public class JdbcConfig {
     @Bean(name="runner")
     @Scope("prototype")

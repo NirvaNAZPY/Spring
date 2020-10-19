@@ -33,32 +33,5 @@ import javax.sql.DataSource;
 @ComponentScan("com.tyty")
 @Import(JdbcConfig.class)
 public class SpringConfiguration {
-    /**
-     * 用于创建一个QueryRunner对象
-     * @param dataSource
-     * @return
-     */
-    @Bean(name="runner")
-    @Scope("prototype")
-    public QueryRunner createQueryRunner(DataSource dataSource){
-        return new QueryRunner(dataSource);
-    }
 
-    /**
-     * 用于创建一个DataSource对象
-     * @return
-     */
-    @Bean(name="dataSource")
-    public DataSource createDataSource(){
-        try{
-            ComboPooledDataSource ds = new ComboPooledDataSource();
-            ds.setDriverClass("com.mysql.cj.jdbc.Driver");
-            ds.setJdbcUrl("jdbc:mysql://localhost:3306/springdemo?serverTimezone=UTC ");
-            ds.setUser("root");
-            ds.setPassword("zpy@mysql");
-            return ds;
-        }catch (Exception e){
-            throw new RuntimeException(e);
-        }
-    }
 }
