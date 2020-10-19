@@ -1,4 +1,4 @@
-package com.tyty.demo.config;
+package config;
 
 /**
  * Created by TYTY on 2020/9/27 17:45
@@ -6,7 +6,6 @@ package com.tyty.demo.config;
 
 import com.mchange.v2.c3p0.ComboPooledDataSource;
 import org.apache.commons.dbutils.QueryRunner;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.*;
 
 import javax.sql.DataSource;
@@ -28,9 +27,11 @@ import javax.sql.DataSource;
  *  细节:
  *      当我们使用注解配置方法时,如果方法有参数,spring框架回去容器中查找有没有可用bean对象
  *      查找的方式和@Autowired是一样的
+ *  
  */
-@Configuration
+//@Configuration
 @ComponentScan("com.tyty")
+@Import(JdbcConfig.class)
 public class SpringConfiguration {
     /**
      * 用于创建一个QueryRunner对象
