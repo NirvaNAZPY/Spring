@@ -27,7 +27,11 @@ import javax.sql.DataSource;
  *  细节:
  *      当我们使用注解配置方法时,如果方法有参数,spring框架回去容器中查找有没有可用bean对象
  *      查找的方式和@Autowired是一样的
- *  
+ * @Import
+ *  作用:用于导入其他的配置类
+ *  属性:
+ *      value:用于指定其他配置类的字节码.
+ *              当我们使用Import的注解之后,有Import注解的类就是父配置类,而导入的都是子配置类
  */
 //@Configuration
 @ComponentScan("com.tyty")
